@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Link</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	
+	<div class="center">
+		<h1>Url Shortener</h1>
+		{% if not present %}
+			<h3>New Link</h3>
+			<p>Your link was formed: <a href="{{ url }}" target="_blank">{{ url }}</a></p>
+		{% else %}
+			<h3>Link already added</h3>
+			<p>The link has already been shortened: <a href="{{ url }}" target="_blank">{{ url }}</a></p>
+		{% endif %}
+	</div>
+</body>
+</html>

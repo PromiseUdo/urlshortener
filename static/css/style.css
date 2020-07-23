@@ -1,0 +1,30 @@
+body {
+	background: lightgrey;
+}
+
+.center {
+	text-align: center;
+	margin-top: 15%;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.url {
+	width: 450px;
+	height: 40px;
+	border: 1px;
+	border-radius: 5px;
+}
+.sub {
+	width: 130px;
+	height: 43px;
+	border: 1px;
+	border-radius: 5px;
+}
