@@ -34,7 +34,7 @@ def link():
 			return render_template('link.html', url=check_url.new_url, present=True)
 
 		else:
-			url_formed = 'http://127.0.0.1:5000/{}'.format(urlid)
+			url_formed = 'https://urlshortener-vee.herokuapp.com/{}'.format(urlid)
 			new_url = URL(old_url=url, new_url=url_formed, shortid=urlid,)
 			db.session.add(new_url)
 			db.session.commit()
